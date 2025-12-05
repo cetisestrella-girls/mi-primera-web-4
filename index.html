@@ -1,6 +1,79 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>menú responsive</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+            padding: 0;
+            margin: 0;
+        }
+
+        #menu{
+            background-color:     #84ad7c;
+        }
+
+        #menu ul{
+            list-style: none;
+            margin: 0;
+            padding: 20px 30px;
+        }
+
+        #menu li{
+            display: inline;
+            margin: 0;
+        }
+
+        #menu li a{
+            color: white;
+            padding: 20px 30px;
+            text-decoration: none;
+        }
+
+        menu li a:hover{
+            background-color: cornflowerblue;
+            color: white;
+        }
+
+        @media screen and (max-width: 747px) {
+            #menu ul{
+                padding: 0;
+            }
+            #menu ul li{
+                margin-right: -3px;
+                display: inline-block;
+                text-align: center;
+                width: 33%;
+            }
+
+            #menu li a{
+                display: list-item;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            #menu ul li{
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div id="menu">
+        <ul>
+            <li><a href="#">home</a></li>
+            <li><a href="titulo vasos.html">servicios</a></li>
+            <li><a href="medio ambiente.html">portafolio</a></li>
+            <li><a href="https://www.youtube.com/watch?v=75a6XAwoVss">videos</a></li>
+            <li><a href="contactanos.html">contactos</a></li>
+        </ul>
+    </div>
+</body>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EcoVasos - Página con DIV</title>
@@ -56,8 +129,12 @@
 </div>
 
 <div id="nav">
-    <a href="section1">Productos</a>
-    <a href="section2">Beneficios</a>
+    <a href="section1">Los vasos y platos sostenibles son alternativas a la vajilla tradicional del plástico o unicel,diseñadas para reducir el impacto ambiental</a>
+</div>
+<br>
+<div style="overflow: hidden;">
+    <p>Los vasos y platos sostenibles pueden ser reutilizables,como la cerámica, porcelna y vidrio (espicialmente reciclado), o desecghables biodegradables,hechos de materiales como el bambú, caña de azúcar, almidón de maíz, o residuos orgánicos de la industria alimentaria</p>
+  <img src="planta.jpg" width="30%"><img src="susten.jpg" width="37%"><img src="tenedor.jpg" width="30%">
 </div>
 
 <div id="section1">
